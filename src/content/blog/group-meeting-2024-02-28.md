@@ -1,7 +1,6 @@
 ---
 author: Junjie Zhao
-pubDatetime: 2024-02-28 10:00:00+08:00
-# modDatetime: 2024-09-23T14:22:00Z
+pubDatetime: 2024-02-28 10:00:00
 title: Group meeting
 slug: group-meeting-2024-02-28
 featured: false
@@ -14,6 +13,12 @@ tags:
 description: Primordial perturbations (primordial black holes and scalar induced gravitational waves);
 ---
 
+## Agenda:
+
 - Fangge Zhang: Primordial perturbations (primordial black holes and scalar induced gravitational waves)
-  - [Constraints on primordial curvature perturbations from primordial black hole dark matter and secondary gravitational waves](https://arxiv.org/abs/1907.11896)
-  - [Primordial black holes and secondary gravitational waves from k/G inflation](https://arxiv.org/abs/2001.05909)
+  - 📄 [Constraints on primordial curvature perturbations from primordial black hole dark matter and secondary gravitational waves](https://arxiv.org/abs/1907.11896)
+  - 📄 [Primordial black holes and secondary gravitational waves from k/G inflation](https://arxiv.org/abs/2001.05909)
+
+## Attendees:
+
+Lele Fan, Dachun Qiang, Zening Wang, Sheng Yang, Fengge Zhang, Junjie Zhao, Jie Zheng
