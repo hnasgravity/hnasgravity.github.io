@@ -15,7 +15,7 @@ description: Primordial perturbations (primordial black holes and scalar induced
 
 ## Agenda:
 
-- Fangge Zhang: Primordial perturbations (primordial black holes and scalar induced gravitational waves)
+- Fengge Zhang: Primordial perturbations (primordial black holes and scalar induced gravitational waves)
   - 📄 [Constraints on primordial curvature perturbations from primordial black hole dark matter and secondary gravitational waves](https://arxiv.org/abs/1907.11896)
   - 📄 [Primordial black holes and secondary gravitational waves from k/G inflation](https://arxiv.org/abs/2001.05909)
 
