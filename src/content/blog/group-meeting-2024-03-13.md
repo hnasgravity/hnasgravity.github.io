@@ -8,8 +8,8 @@ draft: false
 tags:
   - group-meeting
   - supernova
-  - machine learning
-description: The related report on the periodic oscillations study of supernova light curves.
+  - machine-learning
+description: Periodic oscillations study of supernova light curves.
 ---
 
 ## Agenda:
@@ -23,10 +23,11 @@ description: The related report on the periodic oscillations study of supernova 
 
   - 📄 [A 12.4 day periodicity in a close binary system after a supernova](https://arxiv.org/pdf/2310.07784.pdf)
   - 📄 [Minutes-duration Optical Flares with Supernova Luminosities](https://arxiv.org/pdf/2311.10195.pdf)
-  
+
 - Journal Club: A pulsar in a binary with a compact object in the mass gap between neutron stars and black holes
   - Volunteer: Junjie Zhao
   - 📄 [A pulsar in a binary with a compact object in the mass gap between neutron stars and black holes](https://arxiv.org/pdf/2401.09872.pdf)
+
 ## Attendees:
 
 Lele Fan, Dachun Qiang, Zening Wang, Sheng Yang, Zhiqiang You, Fengge Zhang, Junjie Zhao, Jie Zheng
