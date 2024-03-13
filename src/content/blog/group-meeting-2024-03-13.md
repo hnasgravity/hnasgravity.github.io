@@ -26,8 +26,7 @@ description: The related report on the periodic oscillations study of supernova 
   
 - Journal Club: A pulsar in a binary with a compact object in the mass gap between neutron stars and black holes
   - Volunteer: Junjie Zhao
-  - 📄 [A pulsar in a binary with a compact object in the mass gap between neutron stars and black holes
-  - Volunteer: Junjie Zhao](https://arxiv.org/pdf/2401.09872.pdf)
+  - 📄 [A pulsar in a binary with a compact object in the mass gap between neutron stars and black holes](https://arxiv.org/pdf/2401.09872.pdf)
 ## Attendees:
 
 Lele Fan, Dachun Qiang, Zening Wang, Sheng Yang, Zhiqiang You, Fengge Zhang, Junjie Zhao, Jie Zheng
