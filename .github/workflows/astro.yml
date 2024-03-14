@@ -5,6 +5,8 @@
 name: Deploy Astro site to Pages
 
 on:
+  schedule:
+    - cron: '5 18 * * *'
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
