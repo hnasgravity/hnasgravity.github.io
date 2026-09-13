@@ -18,7 +18,9 @@ description: Periodic oscillations study of supernova light curves.
 
   <details>
   <summary>Abstract</summary>
+
   The current trend in scientific research focuses on studying the periodicity of various electromagnetic signals. For instance, the periodic oscillations observed in the light curves of core-collapse supernovae may arise from the cyclic accretion processes involving the compact star in the central engine and its companion. Investigating these signals is pivotal for gaining insights into the mechanisms underlying supernova formation. Consequently, in collaboration with Da-Chun and Ze-Ning, we intend to embark on pertinent research. Our approach entails amassing extensive supernova samples, creating research tools, and methodically analyzing the periodic characteristics of their light curves.
+
   </details>
 
   - 📄 [A 12.4 day periodicity in a close binary system after a supernova](https://arxiv.org/pdf/2310.07784.pdf)

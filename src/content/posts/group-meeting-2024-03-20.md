@@ -19,7 +19,9 @@ description: Introduce some background about type Ia supernova sample (panthepn+
 
   <details>
   <summary>Abstract</summary>
+
   In this report, I would like to introduce the cosmological constraints by using the Pantheon+ data (Type Ia supernova sample) via MCMC method. There have 1701 light curves of 1550 distinct Type Ia supernovae ranging in redshift from z = 0.001 to 2.26 in Pantheon+. When including SH0ES Cepheid distances, it can get Hubble constant of H0 = 73.5 ± 1.1 km s−1 Mpc−1.
+
   </details>
 
   - 📄 [The Pantheon+ Analysis: Cosmological Constraints](https://arxiv.org/pdf/2202.04077.pdf)

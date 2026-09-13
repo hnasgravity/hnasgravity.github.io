@@ -83,7 +83,8 @@
     }
 
     details:not(.callout) {
-      @apply text-foreground inline-block cursor-pointer select-none [&_p]:hidden [&_ul]:my-0!;
+      /* Used for collapsible paper abstracts; keep paragraphs visible and selectable */
+      @apply text-foreground inline-block cursor-pointer [&_ul]:my-0!;
     }
 
     summary {

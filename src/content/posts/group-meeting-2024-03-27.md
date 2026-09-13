@@ -20,7 +20,9 @@ description: Unsupervised machine learning for transient discovery in deeper, wi
 
   <details>
   <summary>Abstract</summary>
+
   In this report, I present an unsupervised method for transient discovery using a clustering technique and the ASTRONOMALY package. The paper  successfully recover the known variable sources, across a range of catalogues from within the fields, and find a further seven uncatalogued variables and two stellar flare events, including a rarely observed ultrafast flare (∼5 min) from a likely M-dwarf.
+
   </details>
 
   - 📄 [Unsupervised machine learning for transient discovery in Deeper, Wider, Faster light curves](https://arxiv.org/pdf/2008.04666.pdf)
