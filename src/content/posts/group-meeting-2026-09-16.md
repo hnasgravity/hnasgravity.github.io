@@ -18,6 +18,9 @@ description: Xiaotong's past research and KAGRA concerned stuff;
   - Past research
 - Round table
 - KAGRA update
+  - Gong Cheng has been assisted to obtain his credentials to access LVK resources. Now Gong needs to sign pledge to finally get his credentials. (11th Sep.)
+  - KIW15, ShanghaiTech University, 18-19 Dec.
+  - 38th KAGRA F2F, ShanghaiTech University, 15-17 Dec.
 
 ## Attendees:
 
