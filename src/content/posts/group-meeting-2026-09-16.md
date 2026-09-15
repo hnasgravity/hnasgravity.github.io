@@ -1,5 +1,5 @@
 ---
-author: Junjie Zhao
+author: Yuhang Zhao
 pubDatetime: 2026-09-16 10:00:00
 title: Group meeting
 slug: group-meeting-2026-09-16
