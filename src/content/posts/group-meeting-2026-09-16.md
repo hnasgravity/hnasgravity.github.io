@@ -9,7 +9,7 @@ tags:
   - group-meeting
   - Taiji
   - gravitational-waves
-description: Primordial perturbations (primordial black holes and scalar induced gravitational waves);
+description: Xiaotong's past research and KAGRA concerned stuff;
 ---
 
 ## Agenda:
