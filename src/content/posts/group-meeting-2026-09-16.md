@@ -24,6 +24,21 @@ description: Xiaotong's past research and KAGRA concerned stuff
     - KIW15, ShanghaiTech University, 18-19 Dec.
     - 38th KAGRA F2F, ShanghaiTech University, 15-17 Dec.
 
+## Meeting Minutes
+
+### Presentations by Xiaotong
+
+- Xiaotong introduced the physical framework and setup of Taiji.
+- He presented the initial results obtained from Taiji-I.
+- He explained the strategy used for detector calibration.
+- He discussed statistical validation using Monte Carlo.
+
+### Presentations by Yuhang
+
+- Yuhang shared the current status of our group in KAGRA and the LVK gravitational wave community.
+- He explained the procedure required to get KAGRA credentials.
+- He announced that two gravitational wave workshops will be organized in China by the end of this year.
+
 ## Attendees:
 
 Darshan Kumar, Yuhang Zhao, Xiaotong Wei, Sheng Yang, Bin Liu, Zhiqiang You, Juntao Bai, Dachun Qiang, Gong Cheng, Park Chan, Fengge Zhang
