@@ -9,7 +9,7 @@ tags:
   - group-meeting
   - Taiji
   - gravitational-waves
-description: Xiaotong's past research and KAGRA concerned stuff;
+description: Xiaotong's past research and KAGRA concerned stuff; Tencent meeting number: 303-088-341
 ---
 
 ## Agenda:
