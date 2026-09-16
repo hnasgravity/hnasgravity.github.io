@@ -1,7 +1,7 @@
 ---
 author: Yuhang Zhao
 pubDatetime: 2026-09-16 10:00:00
-title: Group meeting
+title: Group meeting (Tencent meeting number: 303-088-341)
 slug: group-meeting-2026-09-16
 featured: false
 draft: false
@@ -13,7 +13,6 @@ description: Xiaotong's past research and KAGRA concerned stuff; Tencent meeting
 ---
 
 ## Agenda:
-
 - Xiaotong Wei:
   - Past research
 - Round table
