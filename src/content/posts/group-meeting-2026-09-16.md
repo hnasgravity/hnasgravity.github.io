@@ -26,4 +26,4 @@ description: Xiaotong's past research and KAGRA concerned stuff
 
 ## Attendees:
 
-Darshan Kumar, Yuhang Zhao...
+Darshan Kumar, Yuhang Zhao, Xiaotong Wei, Sheng Yang, Bin Liu, Zhiqiang You, Juntao Bai, Dachun Qiang, Gong Cheng, Park Chan
