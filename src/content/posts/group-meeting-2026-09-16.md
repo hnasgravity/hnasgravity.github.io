@@ -1,7 +1,7 @@
 ---
 author: Yuhang Zhao
 pubDatetime: 2026-09-16 10:00:00
-title: Group meeting (Tencent meeting number: 303-088-341)
+title: Group meeting 
 slug: group-meeting-2026-09-16
 featured: false
 draft: false
@@ -9,7 +9,7 @@ tags:
   - group-meeting
   - Taiji
   - gravitational-waves
-description: Xiaotong's past research and KAGRA concerned stuff; Tencent meeting number: 303-088-341
+description: Xiaotong's past research and KAGRA concerned stuff. Tencent meeting number: 303-088-341.
 ---
 
 ## Agenda:
