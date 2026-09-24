@@ -1,6 +1,6 @@
 ---
 author: Yuhang Zhao
-pubDatetime: 2026-09-24 10:00:00
+pubDatetime: 2026-09-30 10:00:00
 title: Group meeting 
 slug: group-meeting-2026-09-30
 featured: false
