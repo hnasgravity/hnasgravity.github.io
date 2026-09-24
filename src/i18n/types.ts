@@ -1,20 +1,18 @@
 export interface UIStrings {
   nav: {
     home: string;
-    posts: string;
+    activities: string;
     tags: string;
     about: string;
     archives: string;
     search: string;
   };
   post: {
-    publishedAt: string;
     updatedAt: string;
     sharePostIntro: string;
     sharePostOn: string;
     sharePostViaEmail: string;
     sharePostViaWechatQr: string;
-    tagLabel: string;
     backToTop: string;
     goBack: string;
     editPage: string;
@@ -29,8 +27,17 @@ export interface UIStrings {
   home: {
     socialLinks: string;
     featured: string;
-    recentPosts: string;
     allPosts: string;
+    noCategoryPosts: string;
+    viewAllCategoryPosts: string;
+  };
+  /**
+   * Display names for the post categories declared in
+   * `src/utils/postCategories.ts`. Each key must match a `labelKey` there.
+   */
+  categories: {
+    groupMeeting: string;
+    mingliSeminar: string;
   };
   footer: {
     copyright: string;
@@ -43,8 +50,9 @@ export interface UIStrings {
     tagsTitle: string;
     tagsDesc: string;
 
-    postsTitle: string;
-    postsDesc: string;
+    categoriesTitle: string;
+    categoriesDesc: string;
+    categoryDesc: string;
 
     archivesTitle: string;
     archivesDesc: string;
@@ -57,8 +65,6 @@ export interface UIStrings {
     openMenu: string;
     closeMenu: string;
     toggleTheme: string;
-    searchPlaceholder: string;
-    noResults: string;
     goToPreviousPage: string;
     goToNextPage: string;
   };

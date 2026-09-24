@@ -3,20 +3,18 @@ import type { UIStrings } from "../types";
 export default {
   nav: {
     home: "Home",
-    posts: "Activities",
+    activities: "Activities",
     tags: "Tags",
     about: "About",
     archives: "Archives",
     search: "Search",
   },
   post: {
-    publishedAt: "Published at",
     updatedAt: "Updated",
     sharePostIntro: "Share this post:",
     sharePostOn: "Share this post on {{platform}}",
     sharePostViaEmail: "Share this post via email",
     sharePostViaWechatQr: "Scan to share on WeChat",
-    tagLabel: "Tags",
     backToTop: "Back to top",
     goBack: "Go back",
     editPage: "Edit page",
@@ -31,8 +29,13 @@ export default {
   home: {
     socialLinks: "Social Links",
     featured: "Featured",
-    recentPosts: "Activities",
     allPosts: "All activities",
+    noCategoryPosts: "No posts in this category yet.",
+    viewAllCategoryPosts: "All {{category}} posts",
+  },
+  categories: {
+    groupMeeting: "Group Meeting",
+    mingliSeminar: "Mingli Seminar",
   },
   footer: {
     copyright: "Copyright",
@@ -45,8 +48,9 @@ export default {
     tagsTitle: "Tags",
     tagsDesc: "All the tags used in posts.",
 
-    postsTitle: "Activities",
-    postsDesc: "All the activities in our group.",
+    categoriesTitle: "Categories",
+    categoriesDesc: "All the activity categories in our group.",
+    categoryDesc: "All posts in the {{category}} category.",
 
     archivesTitle: "Archives",
     archivesDesc: "All the articles I've archived.",
@@ -59,8 +63,6 @@ export default {
     openMenu: "Open menu",
     closeMenu: "Close menu",
     toggleTheme: "Toggle theme",
-    searchPlaceholder: "Search posts...",
-    noResults: "No results found",
     goToPreviousPage: "Go to previous page",
     goToNextPage: "Go to next page",
   },

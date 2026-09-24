@@ -10,7 +10,8 @@ import Socials from "@/components/Socials.astro";
 import Card from "@/components/Card.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
-import { useTranslations } from "@/i18n";
+import { getPostsByCategory, POST_CATEGORIES } from "@/utils/postCategories";
+import { tplStr, useTranslations } from "@/i18n";
 import config from "@/config";
 
 const { socials, posts: postsConfig } = config;
@@ -21,8 +22,18 @@ const t = useTranslations(locale);
 const posts = await getCollection("posts");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 const homePath = getRelativeLocaleUrl(locale, "");
+
+/**
+ * Homepage category sections, in the order declared by `POST_CATEGORIES`.
+ * Each shows at most `postsConfig.perIndex` posts and links to its full,
+ * paginated listing under `/categories/<slug>/`.
+ */
+const categorySections = POST_CATEGORIES.map(({ slug, labelKey }) => ({
+  slug,
+  title: t.categories[labelKey],
+  posts: getPostsByCategory(sortedPosts, slug),
+}));
 ---
 
 <Layout>
@@ -88,13 +99,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
 
     {
       featuredPosts.length > 0 && (
-        <section
-          id="featured"
-          class:list={[
-            "pt-12 pb-6",
-            { "border-border border-b": recentPosts.length > 0 },
-          ]}
-        >
+        <section id="featured" class="border-border border-b pt-12 pb-6">
           <h2 class="text-2xl font-semibold tracking-wide">
             {t.home.featured}
           </h2>
@@ -108,22 +113,43 @@ const homePath = getRelativeLocaleUrl(locale, "");
     }
 
     {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">
-            {t.home.recentPosts}
-          </h2>
-          <ul>
-            {recentPosts.slice(0, postsConfig.perIndex).map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
+      categorySections.map(({ slug, title, posts: categoryPosts }) => {
+        const visiblePosts = categoryPosts.slice(0, postsConfig.perIndex);
+        const hasMore = categoryPosts.length > visiblePosts.length;
+
+        return (
+          <section
+            id={`category-${slug}`}
+            class="border-border border-b pt-12 pb-6"
+          >
+            <h2 class="text-2xl font-semibold tracking-wide">{title}</h2>
+            {categoryPosts.length > 0 ? (
+              <ul>
+                {visiblePosts.map(data => (
+                  <Card variant="h3" {...data} />
+                ))}
+              </ul>
+            ) : (
+              <p class="text-muted-foreground mt-4">{t.home.noCategoryPosts}</p>
+            )}
+            {hasMore && (
+              <div class="mt-4">
+                <LinkButton
+                  href={getRelativeLocaleUrl(locale, `categories/${slug}`)}
+                  class="text-accent"
+                >
+                  {tplStr(t.home.viewAllCategoryPosts, { category: title })}
+                  <IconArrowRight class="inline-block rtl:-rotate-180" />
+                </LinkButton>
+              </div>
+            )}
+          </section>
+        );
+      })
     }
 
     <div class="my-8 text-center">
-      <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
+      <LinkButton href={getRelativeLocaleUrl(locale, "archives")}>
         {t.home.allPosts}
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>

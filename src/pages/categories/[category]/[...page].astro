@@ -1,0 +1,62 @@
+---
+import { getCollection } from "astro:content";
+import type { GetStaticPathsOptions } from "astro";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Main from "@/components/Main.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Card from "@/components/Card.astro";
+import Footer from "@/components/Footer.astro";
+import Pagination from "@/components/Pagination.astro";
+import { getSortedPosts } from "@/utils/getSortedPosts";
+import { getPostsByCategory, POST_CATEGORIES } from "@/utils/postCategories";
+import { tplStr, useTranslations } from "@/i18n";
+import config from "@/config";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  const sortedPosts = getSortedPosts(posts);
+
+  return POST_CATEGORIES.flatMap(({ slug, labelKey }) =>
+    paginate(getPostsByCategory(sortedPosts, slug), {
+      params: { category: slug },
+      props: { labelKey },
+      pageSize: config.posts.perPage,
+    })
+  );
+}
+
+const { page, labelKey } = Astro.props;
+
+const locale = Astro.currentLocale ?? config.site.lang;
+const t = useTranslations(locale);
+
+const categoryTitle = t.categories[labelKey];
+---
+
+<Layout title={`${categoryTitle} | ${config.site.title}`}>
+  <Header />
+
+  <Breadcrumb />
+
+  <Main
+    pageTitle={categoryTitle}
+    pageDesc={tplStr(t.pages.categoryDesc, { category: categoryTitle })}
+  >
+    {
+      page.data.length > 0 ? (
+        <ul>
+          {page.data.map(data => (
+            <Card {...data} />
+          ))}
+        </ul>
+      ) : (
+        <p class="text-muted-foreground">{t.home.noCategoryPosts}</p>
+      )
+    }
+  </Main>
+
+  <Pagination {page} />
+
+  <Footer noMarginTop={page.lastPage > 1} />
+</Layout>
